@@ -1,11 +1,18 @@
 source 'https://rubygems.org'
-gem 'thin'
+group :development do
+  # Moved this from development, test
+  gem 'web-console'
+  # Use thin because it's quicker than Webrick
+  gem 'thin'
+  # Required for heroku deployment
+  gem 'rails_12factor'
+end
+# Use postgres database instead of sqlite3 because Heroku for deployment
+gem 'pg'
+# Use slim because nobody likes typing '<','>' and closing tags in erb
 gem 'slim-rails'
-gem 'web-console', group: :development
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,7 +32,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
