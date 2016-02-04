@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'modernizr-rails'
 group :development do
   # Moved this from development, test
   gem 'web-console'

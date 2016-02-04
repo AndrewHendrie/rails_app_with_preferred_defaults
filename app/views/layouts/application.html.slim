@@ -1,10 +1,13 @@
 doctype html
-html
+html.no-js lang=""
   head
+    meta charset="utf-8"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
     title Custom Rails App
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag :modernizr
     = csrf_meta_tags
     meta name="viewport" content="width=device-width, initial-scale=1.0"
   body
     = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
