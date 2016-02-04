@@ -1,6 +1,5 @@
 nav
   ul 
-
     - if user_signed_in?
       = link_to destroy_user_session_path, method: :delete
         li Sign out
