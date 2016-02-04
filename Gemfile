@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'devise'
 
 group :development do
   # Moved this from development, test
