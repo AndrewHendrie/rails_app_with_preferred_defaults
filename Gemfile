@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'modernizr-rails'
+
 group :development do
   # Moved this from development, test
   gem 'web-console'
@@ -8,6 +8,8 @@ group :development do
   # Required for heroku deployment
   gem 'rails_12factor'
 end
+# Use modernizr for Javascript feature detection
+gem 'modernizr-rails'
 # Use postgres database instead of sqlite3 because Heroku for deployment
 gem 'pg'
 # Use slim because nobody likes typing '<','>' and closing tags in erb
