@@ -1,11 +1,5 @@
-$("a.navicon.open").click -> 
+$('a.navicon').click ->
   $('nav').toggle();
-  $('a.navicon.open').hide();
-  $('a.navicon.close').show();
-  $('main').toggle();
-
-$("a.navicon.close").click -> 
-  $('nav').toggle();
-  $('a.navicon.close').hide();
-  $('a.navicon.open').show();
+  $('a.navicon.open').toggle();
+  $('a.navicon.close').toggle();
   $('main').toggle();
