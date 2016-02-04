@@ -1,4 +1,11 @@
 nav
   ul 
-    a href="/"
-      li Home
+
+    - if user_signed_in?
+      = link_to destroy_user_session_path, method: :delete
+        li Sign out
+    - else
+      a href="/sign-up"
+        li Sign up  
+      a href="/sign-in"
+        li Sign in  
