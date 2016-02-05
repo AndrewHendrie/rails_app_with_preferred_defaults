@@ -1,28 +1,23 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
+This README documents the steps necessary to get the
 application up and running.
 
-Things you may want to cover:
+=== Dependencies
+* Ruby version 2.2.0
+* Rails version 4.2.1
+* Postgres version 9.4.0
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
+=== Configuration
+* Navigate to your desired location via CLI (ex. $ cd desktop in Terminal for Mac)
+* Run git clone https://github.com/AndrewHendrie/rails_app_with_preferred_defaults.git
+* Move into the rails_app_with_preferred_defaults folder via CLI
+* Run the bundle command
+* Ensure that you have Postgres running locally (go to their website to download/install it if necessary)
+* Run rake db:create db:migrate to initialize your database
+* Run rails s to start the rails server
+* Visit http://localhost:3000 in your web browser to view the application
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
