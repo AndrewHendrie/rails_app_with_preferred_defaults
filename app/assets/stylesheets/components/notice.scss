@@ -1,4 +1,13 @@
 section.notice {
-  padding: 0 1ch;
-  border-bottom: 1px solid #efefef;
+  padding:0 1ch;
+  border-bottom:1px solid #efefef;
+  p.notice {
+    float:left;
+    max-width:80%;
+  }
+  a.close {
+    padding:2ch 0;
+    color:#000;
+    float:right;
+  }
 }
