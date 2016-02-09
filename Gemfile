@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'capybara'
 gem 'modernizr-rails'
 gem 'pg'
 gem 'slim-rails'
