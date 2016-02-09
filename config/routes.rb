@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   get 'page/index'
   devise_scope :user do
     get "/sign-in" => "devise/sessions#new"
