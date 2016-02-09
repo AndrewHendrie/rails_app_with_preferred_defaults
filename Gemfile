@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'devise'
 gem 'modernizr-rails'
 gem 'pg'
 gem 'slim-rails'
