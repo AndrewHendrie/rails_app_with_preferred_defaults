@@ -1,13 +1,4 @@
 nav
   ul
-    - if current_user
-      li
-        | Signed in as 
-        = current_user.email
-      a href="/signout"
-        li Sign out
-    - else
-      = link_to sign_up_path
-        li Sign up
-      = link_to sign_in_path
-        li Sign in
+    a href="/"
+      li Home
